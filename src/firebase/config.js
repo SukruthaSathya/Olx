@@ -1,7 +1,10 @@
+//import dependencies
 import firebase from 'firebase'
 import 'firebase/auth'
 import 'firebase/firestore'
+import 'firebase/storage'
 
+//Initialize app with the config vars
 const firebaseConfig = {
     apiKey: "AIzaSyA3q8TahtQyC2sGQnqvzM0y16UZaCeVQUY",
     authDomain: "fir-76ddd.firebaseapp.com",
@@ -12,4 +15,5 @@ const firebaseConfig = {
     measurementId: "G-P0ZK9TK2JY"
   };
 
+  //export it for use
  export default firebase.initializeApp(firebaseConfig)
