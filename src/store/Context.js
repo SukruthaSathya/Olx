@@ -1,3 +1,5 @@
+//firebase related context
+
 import {createContext,useState} from 'react'
 
 export const FirebaseContext = createContext(null)

@@ -21,7 +21,7 @@ export default function Signup() {
           username:username, 
           phone:phone 
         }).then(()=>{
-          history .push("/login")
+          history.push("/login")
         })
       })
     })
@@ -29,7 +29,7 @@ export default function Signup() {
   return (
     <div>
       <div className="signupParentDiv">
-        <img width="200px" height="200px" src={Logo}></img>
+        <img width="200px" height="200px" src={Logo} alt=''></img>
         <form onSubmit={handleSubmit}>
           <label htmlFor="fname">Username</label>
           <br />
@@ -82,7 +82,7 @@ export default function Signup() {
           <br />
           <button>Signup</button>
         </form>
-        <a>Login</a>
+        <a href='/login'>Login</a>
       </div>
     </div>
   );
