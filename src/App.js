@@ -41,7 +41,6 @@ function App() {
         <Route path='/view'>
           <View/>
         </Route>
-
       </Router>
     </Post>
     </div>

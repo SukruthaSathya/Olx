@@ -2,6 +2,7 @@ import React from 'react'
 
  export default function SellButton() {
     return(<svg
+        
         width={104}
         height={48}
         viewBox="0 0 1603 768"

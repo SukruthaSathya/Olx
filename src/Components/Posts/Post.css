@@ -1,3 +1,7 @@
+.postParentDiv{
+  padding: 0 5%;
+}
+
 .moreView {
   margin: 16px 16px 24px;
   padding: 16px 16px 32px;
@@ -22,8 +26,12 @@
 }
 
 .recommendations .cards {
+  flex-flow: wrap;
   display: flex;
+  padding: 2% 0px;
+  justify-content: space-between;
 }
+
 
 .moreView .cards {
   white-space: nowrap;
@@ -32,19 +40,30 @@
 }
 
 .card {
-  margin-right: 15px;
-  padding: 13px;
-  max-width: 222px;
-  width: 222px;
+  
+  padding: 5px;
+  margin-top: 1%;
+  width: 24%;
   height: 270px;
-  display: inline-block;
+  display: flex;
   cursor: pointer;
+}
+.cardImage{
+  height: 60%;
+  display: flex;
+}
+.cardContent{
+  height: 40%;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
 }
 
 .card .favorite {
+  width: 10%;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  
 }
 
 .card .image {
@@ -60,21 +79,34 @@
   min-height: 100%;
   text-align: center;
 }
+.cardContent .content{
+  height: 81%;
+}
+.cardContent .content p{
+  margin-bottom: 0;
+}
 .card .content .rate {
   margin-top: 10px;
   font-size: larger;
   font-weight: bold;
+  color:#002f34
 }
 .card .content .kilometer {
   font-size: medium;
+  color:#002f34
 }
 .card .content .name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: small;
+  color: rgba(0,47,52,.64)
 }
 .card .date {
   display: flex;
   justify-content: flex-end;
   font-size: small;
+  color: rgba(0,47,52,.64)
 }
 
 .recommendations {

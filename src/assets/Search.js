@@ -9,6 +9,7 @@ export default function Search(props) {
         color={props.color ? props.color :''}
         className
         fillRule="evenodd"
+        
       >
         <path
           className="rui-77aaa"

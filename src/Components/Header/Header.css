@@ -1,9 +1,10 @@
 .headerParentDiv {
-  padding: 10px;
+  
   background-color: whitesmoke;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   z-index: 999;
+  padding: 0.7% 3% 1%;
 }
 
 .headerChildDiv {
@@ -13,8 +14,9 @@
   align-items: center;
 }
 
+
 .placeSearch {
-  width: 16em;
+  width: 21%;
   height: 48px;
   display: flex;
   align-items: center;
@@ -30,12 +32,13 @@
 }
 
 .placeSearch input {
+  padding-left: 5%;
   border-color: transparent;
   outline-color: transparent;
 }
 
 .productSearch {
-  width: 35em;
+  width: 50%;
   height: 48px;
   border: 2px solid #002f34;
   border-radius: 4px;
@@ -54,11 +57,16 @@
 }
 
 .productSearch .input input {
+  padding: 1%;
   border-color: transparent;
   outline-color: transparent;
   width: 100%;
   align-items: center;
 }
+.productSearch .input input::placeholder{
+  color: rgb(62, 97, 114);
+}
+
 
 .productSearch .searchAction {
   min-width: 48px;
@@ -92,6 +100,7 @@
   text-overflow: ellipsis;
   font-weight: bolder;
   margin-right: 5px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .language svg {
@@ -105,7 +114,9 @@
   font-weight: bolder;
   margin-right: 5px;
 }
-
+.loginPage{
+  font-weight: 600;
+}
 .loginPage hr {
   margin: 0;
   background-color: black;
@@ -117,6 +128,7 @@
 }
 
 .sellMenu {
+  filter: drop-shadow(2px 4px 6px rgb(163, 154, 154));
   position: relative;
   cursor: pointer;
 }
