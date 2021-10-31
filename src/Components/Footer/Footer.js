@@ -6,23 +6,33 @@ function Footer() {
   return (
     <div className="footerParentDiv">
       <div className="content">
-        <div>
-          <div className="heading">
-            <p>POPULAR LOCATIONS</p>
-          </div>
+        <div className="section">
+          <section >
+          POPULAR LOCATIONS
           <div className="list">
             <ul>
-              <li>kolkata</li>
+              <li>Kolkata</li>
               <li>Mumbai</li>
               <li>Chennai</li>
               <li>Pune</li>
             </ul>
           </div>
+          </section>
         </div>
-        <div>
-          <div className="heading">
-            <p>ABOUT US</p>
+        <div className="section">
+          <section>TRENDING LOCATIONS
+          <div className="list">
+            <ul>
+              <li>Bhubaneshwar</li>
+              <li>Hyderabad</li>
+              <li>Chandigarh</li>
+              <li>Nashik</li>
+            </ul>
           </div>
+          </section>
+        </div>
+        <div className="section">
+          <section>ABOUT US
           <div className="list">
             <ul>
               <li>About OLX Group</li>
@@ -31,11 +41,10 @@ function Footer() {
               <li>OLXPeople</li>
             </ul>
           </div>
+          </section>
         </div>
-        <div>
-          <div className="heading">
-            <p>OLX</p>
-          </div>
+        <div className="section">
+          <section>OLX
           <div className="list">
             <ul>
               <li>Help</li>
@@ -43,12 +52,22 @@ function Footer() {
               <li>Legal & Privacy information</li>
             </ul>
           </div>
+          </section>
+        </div>
+        <div className="section">
+        <section>FOLLOW US</section>
+        <div>
+        <i className="fab fa-facebook"></i>
+        <i className="fab fa-instagram"></i>
+        <i className="fab fa-twitter"></i>
+        </div>
         </div>
       </div>
       <div className="footer">
         <p>Other Countries Pakistan - South Africa - Indonesia</p>
         <p>Free Classifieds in India. © 2006-2021 OLX</p>
       </div>
+      
     </div>
   );
 }

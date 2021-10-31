@@ -4,24 +4,52 @@
 .footerParentDiv .content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background: #ebeeef;
-  padding: 16px;
-}
+  padding: 1% 5%;}
 .footerParentDiv .content .heading {
   font-size: 24px;
   font-weight: bolder;
+}
+.list{
+  margin-top: 3%;
+  font-weight: 500;
+  font-size: 80%;
+  color: #50686b;
+}
+.list ul{
+  list-style-type: none;
+  padding-left: 0%;
+}
+.section{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.section section{
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+    flex-basis: 20%;
+    font-size: 14px;
+    line-height: 20px;
+    color: #002f34;
+}
+.section i{
+  margin: 3%;
+    font-size: 80%;
+    color: darkslategrey;
 }
 
 .footerParentDiv .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 1% 4%;
   background: #002f34;
   color: whitesmoke;
 }
 
 .footerParentDiv .footer p {
   margin: 0;
+  font-size: x-small;
 }
