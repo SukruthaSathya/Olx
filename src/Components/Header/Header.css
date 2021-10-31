@@ -126,6 +126,47 @@
 .loginPage a{
   text-decoration: none;
 }
+.userLoginPage{
+  font-weight: 600;
+  font-size: x-large;
+  background-color: #002f34;
+  color: white;
+  padding: 0.2% 0.8%;
+   border-radius: 50%;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.logoutMenu{
+  position: absolute;
+  padding: 1%;
+    left: 85%;
+    z-index: 999;
+    top: 100%;
+    color: black;
+    background-color: white;
+    display: flex;
+}
+ .logoutMenu h2{
+   color: #398c97;
+   font-weight: bolder;
+ }
+ .logoutDiv{
+   display: flex;
+   flex-direction: column;
+ }
+ .logoutDiv span{
+   font-weight: 600;
+   color: grey;
+   cursor: pointer;
+ }
+ .logoutDiv span:hover{
+   color: black;
+ }
+
+.userLoginPage a{
+  
+  text-decoration: none;
+}
 
 .sellMenu {
   filter: drop-shadow(2px 4px 6px rgb(163, 154, 154));

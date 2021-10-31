@@ -1,6 +1,5 @@
 import React, { Fragment, useContext, useState } from 'react';
 import './Create.css';
-import Header from '../Header/Header';
 import {FirebaseContext,AuthContext} from '../../store/Context'
 import { useHistory } from 'react-router';
 
@@ -30,7 +29,7 @@ const handleSubmit=()=>{
 
   return (
     <Fragment>
-      <Header />
+      
       <card>
         <div className="centerDiv">
           

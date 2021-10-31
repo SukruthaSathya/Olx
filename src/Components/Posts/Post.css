@@ -37,6 +37,10 @@
   white-space: nowrap;
   overflow-x: scroll;
   overflow-y: hidden;
+  flex-flow: wrap;
+  display: flex;
+  padding: 2% 0px;
+  justify-content: space-between;
 }
 
 .card {
@@ -51,6 +55,7 @@
 .cardImage{
   height: 60%;
   display: flex;
+  justify-content: space-between;
 }
 .cardContent{
   height: 40%;
