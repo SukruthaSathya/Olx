@@ -84,87 +84,10 @@ function Posts() {
               <p className="name"> YAMAHA R15V3hsdjhaskjdhkjsgfhjdgshjgsdjfhgasjdgfsgf</p>
             </div>
             <div className="cardFoot">
-            <div className="place">
-
-            </div>
-            <div className="date">
-              <span>10/5/2021</span>
-            </div>
-            </div>
-            
+            <p>Calicut, Kerala</p>
+            <p>10/05/2021</p>
             </div>
           </div>
-
-
-
-          <div className="card">
-            <div className="favorite">
-              <Heart></Heart>
-            </div>
-            <div className="image">
-              <img src="../../../Images/R15V3.jpg" alt="" />
-            </div>
-            <div className="content">
-              <p className="rate">&#x20B9; 250000</p>
-              <span className="kilometer">Two Wheeler</span>
-              <p className="name"> YAMAHA R15V3</p>
-            </div>
-            <div className="date">
-              <span>10/5/2021</span>
-            </div>
-          </div>
-          <div className="card">
-            <div className="favorite">
-              <Heart></Heart>
-            </div>
-            <div className="image">
-              <img src="../../../Images/R15V3.jpg" alt="" />
-            </div>
-            <div className="content">
-              <p className="rate">&#x20B9; 250000</p>
-              <span className="kilometer">Two Wheeler</span>
-              <p className="name"> YAMAHA R15V3</p>
-            </div>
-            <div className="date">
-              <span>10/5/2021</span>
-            </div>
-          </div>
-          <div className="card">
-            <div className="favorite">
-              <Heart></Heart>
-            </div>
-            <div className="image">
-              <img src="../../../Images/R15V3.jpg" alt="" />
-            </div>
-            <div className="content">
-              <p className="rate">&#x20B9; 250000</p>
-              <span className="kilometer">Two Wheeler</span>
-              <p className="name"> YAMAHA R15V3</p>
-            </div>
-            <div className="date">
-              <span>10/5/2021</span>
-            </div>
-          </div>
-          <div className="card">
-            <div>
-              <div className="favorite">
-                <Heart></Heart>
-              </div>
-              <div className="image">
-                <img src="../../../Images/R15V3.jpg" alt="" />
-              </div>
-            </div>
-            <div>
-              <div className="content">
-                <p className="rate">&#x20B9; 250000</p>
-                <span className="kilometer">Two Wheeler</span>
-                <p className="name"> YAMAHA R15V3</p>
-              </div>
-              <div className="date">
-                <span>10/5/2021</span>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>

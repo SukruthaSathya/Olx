@@ -102,10 +102,13 @@
   font-size: small;
   color: rgba(0,47,52,.64)
 }
-.card .date {
+.cardFoot{
   display: flex;
-  justify-content: flex-end;
-  font-size: small;
+  justify-content: space-between;
+}
+.card p {
+  
+  font-size: x-small;
   color: rgba(0,47,52,.64)
 }
 
