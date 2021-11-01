@@ -59,7 +59,7 @@ function Posts() {
                 <p className="name">{product.name}</p>
               </div>
               <div className="cardFoot">
-                <p>{product.place}</p>
+                <p>{product.city},{product.states}</p>
                 <p>{product.createdAt}</p>
               </div>
               </div>

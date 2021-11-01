@@ -146,6 +146,9 @@
     background-color: white;
     display: flex;
 }
+.logOut{
+  display: none;
+}
  .logoutMenu h2{
    color: #398c97;
    font-weight: bolder;

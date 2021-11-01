@@ -20,25 +20,35 @@ function View() {
   })
   return (
     <div className="viewParentDiv">
+      <div className="leftSection">
       <div className="imageShowDiv">
         <img
           src= {postDetails.url}
           alt=" "
         />
       </div>
+      <div className="descriptionDetails">
+          <h2>Description</h2>
+          <p>{postDetails.description}</p>
+      </div>
+      </div>
       
       <div className="rightSection">
         <div className="productDetails">
-          <p>&#x20B9; {postDetails.price} </p>
-          <span>{postDetails.name}</span>
-          <p>{postDetails.category}</p>
-          <span>{postDetails.createdAt}</span>
+          <p className="price">&#x20B9; {postDetails.price} </p>
+          <span className="title">{postDetails.name}</span>
+          <p className="category">{postDetails.category}</p>
+          <div className="productFoot">
+            <p>{postDetails.city},{postDetails.states}</p>
+            <p>{postDetails.createdAt}</p>
+          </div>
         </div>
        {userDetails && <div className="contactDetails">
-          <p>Seller details</p>
-          <p>{userDetails.username}</p>
+          <p className="contactheading"> SELLER DETAILS</p>
+          <p >{userDetails.username}</p>
           <p>{userDetails.phone}</p>
         </div> }
+        <div> <button className="homeButton">Back To Home</button></div>
       </div>
     </div>
   );

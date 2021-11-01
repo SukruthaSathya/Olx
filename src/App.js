@@ -13,6 +13,7 @@ import Post from './store/PostContext'
  */
 import Home from './Pages/Home';
 import { AuthContext, FirebaseContext } from './store/Context';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   const {setUser}= useContext(AuthContext)
@@ -40,6 +41,7 @@ function App() {
         </Route>
         <Route path='/view'>
           <View/>
+          <Footer/>
         </Route>
       </Router>
     </Post>

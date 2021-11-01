@@ -49,7 +49,7 @@ function Header() {
          <span onClick={()=>setLogout(logout => !logout)}>{user ?  `${user.displayName.charAt(0)}` : 'Login'}</span>
           {user ? "": <hr />}         
         </div>
-        <div className="logoutMenu">
+        <div className={logout===true ? "logoutMenu" : "logOut"}>
         {logout===true && 
         <div className="logoutDiv">
           <h2>{user.displayName}</h2>
