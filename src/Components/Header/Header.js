@@ -15,6 +15,10 @@ function Header() {
   const {firebase} = useContext(FirebaseContext)
   const [logout,setLogout] = useState(false)
 
+  const handleLogin=(e)=>{
+    e.preventDefault()
+    history.push('./login')
+  }
   useEffect(() => {
     console.log(logout);
     
@@ -45,10 +49,13 @@ function Header() {
           <span> ENGLISH </span>
           <Arrow></Arrow>
         </div>
-        <div className={user ? "userLoginPage" : "loginPage"}>
-         <span onClick={()=>setLogout(logout => !logout)}>{user ?  `${user.displayName.charAt(0)}` : 'Login'}</span>
-          {user ? "": <hr />}         
-        </div>
+        {user ? <div className="userLoginPage">
+          <span onClick={()=>setLogout(logout => !logout)}>{`${user.displayName.charAt(0)}`}</span>
+        </div> : <div onClick={handleLogin} className="loginPage">
+          <span>Login</span>
+          <hr />
+        </div>}
+        
         <div className={logout===true ? "logoutMenu" : "logOut"}>
         {logout===true && 
         <div className="logoutDiv">
@@ -60,13 +67,20 @@ function Header() {
         </div> }
         </div>
 
-        <div className="sellMenu">
+        {user ? <div onClick={(e)=>{e.preventDefault()
+        history.push('./create')}} className="sellMenu">
           <SellButton></SellButton>
           <div className="sellMenuContent">
             <SellButtonPlus></SellButtonPlus>
             <span>SELL</span>
           </div>
-        </div>
+        </div> : <div onClick={()=>{return (alert("Please Login to post your ad."))}} className="sellMenu">
+          <SellButton></SellButton>
+          <div className="sellMenuContent">
+            <SellButtonPlus></SellButtonPlus>
+            <span>SELL</span>
+          </div>
+        </div>}
       </div>
     </div>
   );

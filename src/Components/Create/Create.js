@@ -42,7 +42,8 @@ const Create = () => {
         <div className="header">
           <div className="left">
             <div>
-              <i className="fas fa-arrow-left"></i>
+              <i onClick={(e)=>{e.preventDefault()
+              history.push('./')}} className="fas fa-arrow-left"></i>
             </div>
           </div>
           <div><OlxLogo></OlxLogo> </div>
@@ -64,7 +65,7 @@ const Create = () => {
                 <option value="Mobile Phones">Mobile Phones</option>
                 <option value="For Sale: Houses & Apartments">For Sale: Houses & Apartments</option>
                 <option value="Scooters">Scooters</option>
-                <option value="Commercial & Other Vehicles">Commercial & Other Vehicles</option>
+                <option value="Commercial & Other Accessories">Commercial & Other Accessories</option>
                 <option value="For Rent: Houses & Apartments">For Rent: Houses & Apartments</option>
               </select>
             </div>

@@ -23,7 +23,8 @@
   font-family: inherit;
 }
 
-.bannerParentDiv .bannerChildDiv .menuBar .otherQuickOptions {
+.menuBar span{
+  cursor: pointer;
 }
 .bannerParentDiv .bannerChildDiv .menuBar .otherQuickOptions span {
   padding: 10px;

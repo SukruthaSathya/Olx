@@ -90,6 +90,7 @@
   height: 48px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .language span {
@@ -116,6 +117,7 @@
 }
 .loginPage{
   font-weight: 600;
+  cursor: pointer;
 }
 .loginPage hr {
   margin: 0;

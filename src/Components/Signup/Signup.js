@@ -24,6 +24,8 @@ export default function Signup() {
           history.push("/login")
         })
       })
+    }).catch(error=>{
+      alert(error)
     })
 }
   return (
@@ -40,7 +42,7 @@ export default function Signup() {
             onChange={(e)=>{setUsername(e.target.value)}}
             id="fname"
             name="name"
-            defaultValue="John"
+            
           />
           <br />
           <label htmlFor="fname">Email</label>

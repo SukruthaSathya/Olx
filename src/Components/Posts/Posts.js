@@ -24,7 +24,9 @@ function Posts() {
       })
       setProducts(allPost)
     })
-  })
+    console.log(products);
+  },[])
+  
   return (
     <div className="postParentDiv">
       {user && <div className="moreView">
@@ -73,30 +75,37 @@ function Posts() {
           <span>Fresh recommendations</span>
         </div>
         <div className="cards">
-          <div className="card">
-            <div className="cardImage">
-              <div className="favorite">
+        {products.map(product => {
+            return <div className="card"
+              onClick={() => {
+                setPostDetails(product)
+                history.push('/view')
 
-              </div>
+              }}>
+              <div className="cardImage">
+              <div className="favorite"></div>
               <div className="image">
-                <img src="../../../Images/R15V3.jpg" alt="" />
+                  <img src={product.url} alt="" />
+                </div>
+                <div className="favorite">
+                  <Heart></Heart>
+                </div>
+                
               </div>
-              <div className="favorite">
-                <Heart></Heart>
-              </div>
-            </div>
-            <div className="cardContent">
+
+              <div className="cardContent">
               <div className="content">
-                <p className="rate">&#x20B9; </p>
-                <span className="kilometer">Two Wheeler</span>
-                <p className="name"> YAMAHA R15V3hsdjhaskjdhkjsgfhjdgshjgsdjfhgasjdgfsgf</p>
+                <p className="rate">&#x20B9; {product.price}</p>
+                <span className="kilometer">{product.category}</span>
+                <p className="name">{product.name}</p>
               </div>
               <div className="cardFoot">
-                <p>Calicut, Kerala</p>
-                <p>10/05/2021</p>
+                <p>{product.city},{product.states}</p>
+                <p>{product.createdAt}</p>
+              </div>
               </div>
             </div>
-          </div>
+          })}
         </div>
       </div>
       <div className="tryOlxBanner">

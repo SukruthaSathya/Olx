@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { useHistory } from 'react-router';
 import { FirebaseContext } from '../../store/Context';
 import { PostContext } from '../../store/PostContext';
 
@@ -7,6 +8,7 @@ function View() {
   const [userDetails,setUserDetails]=useState([])
   const {firebase} = useContext(FirebaseContext)
   const {postDetails} = useContext(PostContext)
+  const history = useHistory()
 
   useEffect(()=>{
     
@@ -48,7 +50,8 @@ function View() {
           <p >{userDetails.username}</p>
           <p>{userDetails.phone}</p>
         </div> }
-        <div> <button className="homeButton">Back To Home</button></div>
+        <div> <button onClick={(e)=>{e.preventDefault()
+        history.push('./')}} className="homeButton">Back To Home</button></div>
       </div>
     </div>
   );
