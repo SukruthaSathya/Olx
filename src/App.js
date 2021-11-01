@@ -26,7 +26,7 @@ function App() {
   return (
     <div>
     <Post>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Route exact path='/'>
           <Home />
         </Route>
