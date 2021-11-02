@@ -4,6 +4,7 @@ import './Header.css';
 import OlxLogo from '../../assets/OlxLogo';
 import Search from '../../assets/Search';
 import Arrow from '../../assets/Arrow';
+import Logout from '../Logout/Logout';
 import SellButton from '../../assets/SellButton';
 import SellButtonPlus from '../../assets/SellButtonPlus';
 import { AuthContext, FirebaseContext } from '../../store/Context';
@@ -26,7 +27,10 @@ function Header() {
   return (
     <div className="headerParentDiv">
       <div className="headerChildDiv">
+        
         <div className="brandName">
+        <i className="fas fa-align-justify" onClick={(e)=>{e.preventDefault(e)
+          history.push('./logout')}}></i>
           <OlxLogo></OlxLogo>
         </div>
         <div className="placeSearch">
@@ -66,6 +70,8 @@ function Header() {
         }}>Logout</span>
         </div> }
         </div>
+
+        
 
         {user ? <div onClick={(e)=>{e.preventDefault()
         history.push('./create')}} className="sellMenu">

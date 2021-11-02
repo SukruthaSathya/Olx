@@ -14,6 +14,7 @@ import Post from './store/PostContext'
 import Home from './Pages/Home';
 import { AuthContext, FirebaseContext } from './store/Context';
 import Footer from './Components/Footer/Footer';
+import Logout from './Components/Logout/Logout';
 
 function App() {
   const {setUser}= useContext(AuthContext)
@@ -35,6 +36,9 @@ function App() {
         </Route>
         <Route path='/login'>
           <Login/>
+        </Route>
+        <Route path='/logout'>
+          <Logout/>
         </Route>
         <Route path='/create'>
           <Create/>

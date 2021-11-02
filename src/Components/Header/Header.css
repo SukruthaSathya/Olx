@@ -14,7 +14,9 @@
   align-items: center;
 }
 
-
+.brandName i{
+  display: none;
+}
 .placeSearch {
   width: 21%;
   height: 48px;
@@ -219,4 +221,20 @@
   .sellMenu {
     display: none;
   }
+  .headerParentDiv{
+    width: 100vw;
+    padding: 0.7% 1% 1%;
+
+  }
+  .brandName i{
+    display: contents;
+    margin-right: 1%;
+  }
+  .logoutMenu{
+    display: none;
+  }
+  .mobileLogout{
+    display: contents;
+  }
+  
 }

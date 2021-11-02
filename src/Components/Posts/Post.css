@@ -97,7 +97,12 @@
 }
 .card .content .kilometer {
   font-size: medium;
-  color:#002f34
+  color:#002f34;
+  text-overflow : ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+
 }
 .card .content .name {
   white-space: nowrap;
