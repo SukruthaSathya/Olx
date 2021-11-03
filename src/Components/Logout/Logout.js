@@ -20,12 +20,12 @@ function Logout() {
             </div>
             <div className="logoutChild">
                 <div className="userName">
-                    {user ? <div className="firstLetter"><h2>S</h2></div> :
+                    {user ? <div className="firstLetter"><h2>{user.displayName.charAt(0)}</h2></div> :
                         <div className="nonUserName"><i class='fas fa-user-circle'></i>
                         </div>}
                     {user ? <div className="fullName">
                         <p>Hello,</p>
-                        <h4>Sukrutha Sathya</h4>
+                        <h4>{user.displayName}</h4>
                         <p>Logout your account here.</p>
                     </div> : <div className="fullName">
                         <p>Enter to your account</p>
