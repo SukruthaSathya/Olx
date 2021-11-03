@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Olx/static/css/main.407d8553.chunk.css",
-    "main.js": "/Olx/static/js/main.7478eaa6.chunk.js",
-    "main.js.map": "/Olx/static/js/main.7478eaa6.chunk.js.map",
+    "main.css": "/Olx/static/css/main.1f5f1031.chunk.css",
+    "main.js": "/Olx/static/js/main.d036cedb.chunk.js",
+    "main.js.map": "/Olx/static/js/main.d036cedb.chunk.js.map",
     "runtime-main.js": "/Olx/static/js/runtime-main.4cdedd80.js",
     "runtime-main.js.map": "/Olx/static/js/runtime-main.4cdedd80.js.map",
-    "static/js/2.92a3e9e5.chunk.js": "/Olx/static/js/2.92a3e9e5.chunk.js",
-    "static/js/2.92a3e9e5.chunk.js.map": "/Olx/static/js/2.92a3e9e5.chunk.js.map",
+    "static/js/2.59bf5495.chunk.js": "/Olx/static/js/2.59bf5495.chunk.js",
+    "static/js/2.59bf5495.chunk.js.map": "/Olx/static/js/2.59bf5495.chunk.js.map",
     "index.html": "/Olx/index.html",
-    "static/css/main.407d8553.chunk.css.map": "/Olx/static/css/main.407d8553.chunk.css.map",
-    "static/js/2.92a3e9e5.chunk.js.LICENSE.txt": "/Olx/static/js/2.92a3e9e5.chunk.js.LICENSE.txt",
+    "static/css/main.1f5f1031.chunk.css.map": "/Olx/static/css/main.1f5f1031.chunk.css.map",
+    "static/js/2.59bf5495.chunk.js.LICENSE.txt": "/Olx/static/js/2.59bf5495.chunk.js.LICENSE.txt",
     "static/media/TryOlx.74738d3b.png": "/Olx/static/media/TryOlx.74738d3b.png",
     "static/media/banner copy.e2c50805.png": "/Olx/static/media/banner copy.e2c50805.png",
     "static/media/olx-logo.b3f099a2.png": "/Olx/static/media/olx-logo.b3f099a2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4cdedd80.js",
-    "static/js/2.92a3e9e5.chunk.js",
-    "static/css/main.407d8553.chunk.css",
-    "static/js/main.7478eaa6.chunk.js"
+    "static/js/2.59bf5495.chunk.js",
+    "static/css/main.1f5f1031.chunk.css",
+    "static/js/main.d036cedb.chunk.js"
   ]
 }
