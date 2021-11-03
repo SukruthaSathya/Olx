@@ -110,5 +110,49 @@
   background-color: white;
   color: #04474e;
 }
+@media only screen and (max-width: 700px){
+  .viewParentDiv{
+    padding-top: 28%;
+    padding-left: 0;
+    padding-right: 0%;
+    flex-direction: column;
+    
+  }
+  .viewParentDiv .leftSection{
+    width: 98%;
+    padding: 5px;
+  }
+  .leftSection .descriptionDetails h2{
+    font-size: 110%;
+  }
+  .leftSection .descriptionDetails p{
+    font-size: 75%;
+  }
+  .viewParentDiv .rightSection{
+    margin: 1%;
+    width: 98%;
+  }
+  .rightSection .productDetails{
+    padding: 4% 4% 0;
+
+  }
+  .productDetails p{
+    margin-bottom: 5px;
+  }
+  .contactDetails{
+    padding-bottom: 0;
+  }
+  .contactDetails p{
+    color: #002f34;
+    margin-bottom: 5px;
+    font-size: 100%;
+  }
+  .contactDetails .contactheading{
+    font-size: 110%;
+  }
+  .homeButton{
+    margin: 0%;
+  }
+}
 
 

@@ -87,10 +87,10 @@ function Header() {
             <span>SELL</span>
           </div>
         </div>}
-          <div className="displayPlace">
+         {user ? <div className="none"></div> : <div className="displayPlace">
             <p>India</p>
             <i class="material-icons">place</i>
-          </div>
+          </div>}
       </div>
       <div className="mobileSearch">
       <div className="input">

@@ -47,4 +47,7 @@
   .bannerChildDiv .banner {
     position: relative;
   }
+  .bannerParentDiv{
+    padding-top: 6em;
+  }
 }
