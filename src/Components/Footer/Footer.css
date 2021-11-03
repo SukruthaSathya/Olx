@@ -34,6 +34,9 @@
     line-height: 20px;
     color: #002f34;
 }
+.sectionHead i, .noList, .countrySection{
+  display: none;
+}
 .section i{
   margin: 3%;
     font-size: 80%;
@@ -52,4 +55,64 @@
 .footerParentDiv .footer p {
   margin: 0;
   font-size: x-small;
+}
+@media only screen and (max-width: 700px){
+  .footerParentDiv .content{
+    flex-direction: column;
+    padding: 1% 3%;
+  }
+  .content .section{
+    width:100%;
+    
+  }
+  .section section{
+    padding:1%;
+    font-size: 12px;
+  }
+  .noList, .countryFoot{
+    display: none;
+  }
+  .sectionHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .sectionHead i{
+    display: contents;
+    margin: 0%;
+    font-size: 1rem;
+  }
+  .section .followUs{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .socialIcons{
+    display: flex;
+  }
+  .section .followUs i{
+    font-size: 100%;
+  }
+  .countrySection{
+    display: contents;
+    width: 100%;
+  display: flex;
+  flex-direction: column;
+  }
+  .countrySection section{
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+      flex-basis: 20%;
+      line-height: 20px;
+      color: #002f34;
+      padding:1%;
+    font-size: 12px;
+  }
+  .countrySection i{
+      color: darkslategrey;
+  }
+  .footerParentDiv .footer{
+    justify-content: center;
+  }
 }

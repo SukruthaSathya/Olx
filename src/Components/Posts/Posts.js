@@ -58,12 +58,12 @@ function Posts() {
               <div className="content">
                 <p className="rate">&#x20B9; {product.price}</p>
                 <p className="kilometer">{product.name}</p>
-                <span className="name">{product.category}</span>
+                <p className="name">{product.category}</p>
                 
               </div>
               <div className="cardFoot">
                 <p>{product.city},{product.states}</p>
-                <p>{product.createdAt}</p>
+                <p className="cardDate">{product.createdAt}</p>
               </div>
               </div>
             </div>
@@ -98,12 +98,12 @@ function Posts() {
               <div className="content">
                 <p className="rate">&#x20B9; {product.price}</p>
                 <p className="kilometer">{product.name}</p>
-                <span className="name">{product.category}</span>
+                <p className="name">{product.category}</p>
 
               </div>
               <div className="cardFoot">
                 <p>{product.city}, {product.states}</p>
-                <p>{product.createdAt}</p>
+                <p className="cardDate">{product.createdAt}</p>
               </div>
               </div>
             </div>

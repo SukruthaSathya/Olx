@@ -43,4 +43,14 @@
     color: #002f34;
     font-weight: bolder;
   }
+  @media only screen and (max-width: 700px){
+  .loginParentDiv{
+    width: 75%;
+    border-color: grey;
+    padding: 4% 5%;
+  }
+  .loginParentDiv img{
+    margin: 0 7%;
+  }
+}
   

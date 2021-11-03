@@ -87,6 +87,22 @@ function Header() {
             <span>SELL</span>
           </div>
         </div>}
+          <div className="displayPlace">
+            <p>India</p>
+            <i class="material-icons">place</i>
+          </div>
+      </div>
+      <div className="mobileSearch">
+      <div className="input">
+      <div className="searchAction">
+            <Search color="#ffffff"></Search>
+          </div>
+            <input
+              type="text"
+              placeholder="Find Cars, Mobile Phones and more..."
+            />
+          </div>
+          
       </div>
     </div>
   );

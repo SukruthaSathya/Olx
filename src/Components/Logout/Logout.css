@@ -24,6 +24,7 @@
 .logoutChild .userName{
     display: flex;
     align-items: center;
+    border-bottom: 0.5px outset ;
 }
 .userName .firstLetter{
     background-color: rgb(114, 14, 114);
@@ -58,4 +59,25 @@
     font-size: larger;
     font-weight: bolder;
     border: none;
+}
+.nonUserName{
+    font-size: 5rem;
+    color: grey;}
+.fullName span{
+    color: #002f34;
+    text-decoration: underline;
+}
+.contents{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 1%;
+}
+.contents .contentsInside{
+    margin: 3%;
+    display: flex;
+    align-items: center;
+    font-size: medium;
+}
+.contentsInside span{
+    padding-left: 3%;
 }

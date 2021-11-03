@@ -105,15 +105,20 @@
 
 }
 .card .content .name {
-  white-space: nowrap;
+  text-overflow : ellipsis;
   overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: small;
   color: rgba(0,47,52,.64)
 }
 .cardFoot{
   display: flex;
   justify-content: space-between;
+}
+.cardFoot p{
+  text-overflow : ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .card p {
   
@@ -128,4 +133,55 @@
 .recommendations .heading span {
   font-size: 24px;
   color: #002f34;
+}
+.tryOlxBanner img{
+  width: 100%;
+}
+@media only screen and (max-width: 700px) {
+  .postParentDiv{
+    padding: 0%;
+  }
+  .recommendations{
+    margin: 16px 10px 24px;
+  }
+  .recommendations .heading span{
+    font-size: 17px;
+  }
+  .cards{
+    justify-content: space-between;
+    
+  }
+  .moreView .cards{
+    display: flex;
+    padding: 5px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .cards .card{
+    width:49%;
+    margin-top: 3%;
+    margin-right: 0%;
+  }
+  .cardContent{
+    padding: 0 3%;;
+  }
+  .cardDate{
+    display: none;
+  }
+  .cardFoot p{
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .moreView{
+    margin: 2% 0;
+    padding: 1% 1%;
+    width: auto;
+    height: auto;
+  }
+  .moreView .heading :first-child{
+    font-size: 18px;
+  }
+  .heading :last-child {
+    font-size: 12px;}
+  
 }

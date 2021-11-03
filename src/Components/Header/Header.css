@@ -5,6 +5,8 @@
   width: 100%;
   z-index: 999;
   padding: 0.7% 3% 1%;
+  display: flex;
+  flex-direction: column;
 }
 
 .headerChildDiv {
@@ -14,7 +16,7 @@
   align-items: center;
 }
 
-.brandName i{
+.brandName i, .displayPlace, .mobileSearch{
   display: none;
 }
 .placeSearch {
@@ -218,13 +220,14 @@
 @media only screen and (max-width: 700px) {
   .placeSearch,
   .productSearch,
-  .sellMenu {
+  .sellMenu,
+  .language,
+  .loginPage, .userLoginPage {
     display: none;
   }
   .headerParentDiv{
     width: 100vw;
-    padding: 0.7% 1% 1%;
-
+    padding: 1% 2% 1%;
   }
   .brandName i{
     display: contents;
@@ -233,8 +236,61 @@
   .logoutMenu{
     display: none;
   }
-  .mobileLogout{
+  .mobileLogout, .displayPlace{
     display: contents;
   }
+  .displayPlace{
+    display: flex;
+    align-items: center;
+  }
+  .displayPlace p{
+    margin: 0%;
+  }
+  .mobileSearch{
+    width: 100%;
+  height: 2rem;
+  border: 2px solid #002f34;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+  .mobileSearch .input {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
   
+  .mobileSearch .input input {
+    padding: 1%;
+    border-color: transparent;
+    outline-color: transparent;
+    width: 100%;
+    align-items: center;
+  }
+  .mobileSearch .input input::placeholder{
+    color: rgb(62, 97, 114);
+  }
+  
+  
+  .mobileSearch .searchAction {
+    min-width: 10%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    background-color: #002f34;
+    border-radius: 0 4px 4px 0;
+  }
+  
+  .mobileSearch .searchAction svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: white;
+  }
 }
