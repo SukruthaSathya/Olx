@@ -16,6 +16,10 @@ function Login() {
       alert(error.message)
     })
   }
+  const handleSignup=(e)=>{
+    e.preventDefault()
+    history.push('./signup')
+  }
   return (
     <div>
       <div className="loginParentDiv">
@@ -48,7 +52,7 @@ function Login() {
           <br />
           <button>Login</button>
         </form>
-        <a href='/signup' >Signup</a>
+        <a href={handleSignup} >Signup</a>
       </div>
     </div>
   );
