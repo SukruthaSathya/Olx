@@ -84,7 +84,8 @@ export default function Signup() {
           <br />
           <button>Signup</button>
         </form>
-        <a href='/login'>Login</a>
+        <p onClick={(e)=>{e.preventDefault()
+        history.push('./login')}}>Login</p>
       </div>
     </div>
   );

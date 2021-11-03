@@ -52,7 +52,7 @@ function Login() {
           <br />
           <button>Login</button>
         </form>
-        <a href={handleSignup} >Signup</a>
+        <p onClick={handleSignup} >Signup</p>
       </div>
     </div>
   );
